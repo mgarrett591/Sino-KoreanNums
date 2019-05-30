@@ -1,7 +1,10 @@
 import sys
+if(len(sys.argv)!=2):
+    print("usage: python "+sys.argv[0]+" <integer greater than 0 and less than 10^52>")
+    sys.exit()
 num=int(sys.argv[1])
 if(num<=0 or num>=(10**52)):
-    print("usage: python "+sys.argv[0]+" <integer greater than 0 and 10^52>")
+    print("usage: python "+sys.argv[0]+" <integer greater than 0 and less than 10^52>")
     sys.exit()
 out=""
 
